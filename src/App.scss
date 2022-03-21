@@ -1,0 +1,55 @@
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+  "primary": #31316f,
+  "secondary": #F15A29,
+  "dark": #131921,
+  "success": #198754,
+  "info": #0dcaf0,
+  "warning": #a7c227,
+  "danger": #dc3545,
+  "light": #FFF6F4,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: #31316f;
+$secondary-color: #F15A29;
+$ternary-color: #f8f9fa;
+$white-color: #ffffff;
+$black-color: #000000;
+
+p {
+  text-align: justify;
+}
+#navbar {
+  padding: 0px !important;
+  .nav-link {
+    color: $black-color;
+    padding-left: 15px;
+    padding-right: 15px;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  .dropdown-menu {
+    background-color: $white-color;
+  }
+  .dropdown-item {
+    color: $black-color;
+    &:hover {
+      color: $white-color;
+      background-color: $secondary-color;
+    }
+  }
+  .social {
+    a {
+      color: $black-color;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
