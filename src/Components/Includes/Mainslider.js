@@ -3,16 +3,26 @@ import { Col, Row, Image } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel2";
 import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";
-import Image1 from "../../Images/homepage.png";
+import Img from "../../Images/homepage.png";
 
 const Mainslider = () => {
 
     const associations = [
         {
           id: 1,
-          ImageUrl: Image1,
+          ImageUrl: Img,
           alt: "",
         },
+        {
+            id: 2,
+            ImageUrl: Img,
+            alt: "",
+          },          
+        {
+            id: 3,
+            ImageUrl: Img,
+            alt: "",
+          },
       
       ];    
       const options = {
@@ -41,8 +51,8 @@ const Mainslider = () => {
       {/* <div className="">
         <Image src={Img} alt="" className="img-fluid w-100" />
       </div> */}
-     <OwlCarousel options={options}>
-        {associations.map((item, index) => (
+      <OwlCarousel options={options}>
+    {associations.map((item, index) => (
           <div className="mx-2" key={index}>
             <Row>
               <Col md={12}>

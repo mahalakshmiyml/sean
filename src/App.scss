@@ -46,10 +46,21 @@ p {
   }
   .social {
     a {
-      color: $black-color;
+      color: $white-color;
       &:hover {
         color: $secondary-color;
       }
+    }
+  }
+}
+
+#footer {
+  a {
+    color: $white-color;
+    text-decoration: none;
+    &:hover {
+      color: $secondary-color;
+      background-color: $secondary-color;
     }
   }
 }
